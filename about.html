@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Girl</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 20px;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .section {
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: fadeInUp 1s ease;
+        overflow: hidden;
+      }
+
+      .section h2 {
+        color: #fff;
+        margin-top: 0;
+      }
+
+      .section p {
+        color: #fff;
+        line-height: 1.6;
+      }
+
+      .section:nth-child(odd) {
+        background-color: #007bff;
+      }
+
+      .section:nth-child(even) {
+        background-color: #28a745;
+      }
+
+      .team-member {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .team-member img {
+        max-width: 100px;
+        border-radius: 50%;
+        margin-right: 20px;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="main-menu">
+        <div class="logo">
+          <img src="logo.png" alt="">
+          <p>Fashion Girl</p>
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle menu-toggle-chk">
+        <label for="menu-toggle" class="menu-toggle"><i class="fa-solid fa-bars"></i></label>
+        <ul class="menu">
+          <li class="menu-item"><a href="home.html">Home</a></li>
+          <li class="menu-item"><a href="product.html">Products</a></li>
+          <li class="menu-item"><a class="active" href="about.html">About</a></li>
+          <li class="menu-item"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="banner"
+        style="background-image: url('https://www.hollywoodreporter.com/wp-content/uploads/2023/11/miss-universe-contestants-PUBLICITY-MAIN-2023.jpg?w=1296');">
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="section">
+          <h2>About Us</h2>
+          <p>Welcome to <span class="highlight">Fashion Girl</span>, is one of the largest international fashion companies. It belongs to Indited, one of the world's largest distribution
+          groups.
+          
+          The customer is at the heart of our unique business model, which includes design, production, distribution and sales
+          through our extensive retail network. <span class="highlight">Our mission statement is straightforward, yet powerful: "To give customers what they want, and get it to them faster than
+          anyone else." These few words encompass a wealth of strategies that have propelled the brand to the forefront of the
+          fashion industry</span>.</p>
+        </div>
+        <div class="section">
+          <h2>Our Mission</h2>
+          <p>Our mission statement is straightforward, yet powerful: "To give customers what they want, and get it to them faster than
+          anyone else." These few words encompass a wealth of strategies that have propelled the brand to the forefront of the
+          fashion industry</p>
+        </div>
+        <div class="section">
+          <h2>Our Vision</h2>
+          <p>The vision statement of Fashion Girl is: "To become the global leader in sustainable fashion." This succinct phrase outlines the
+          brand's aspirations for a future where it not only leads in terms of financial success and market dominance, but also in
+          sustainable practices within the fashion industry.</p>
+        </div>
+        <div class="section">
+          <h2>Our Values</h2>
+          <p>Customer-Centrality: Fashion Girl's business model is centred around its customers. It focuses on understanding and meeting the
+          diverse needs of its customers promptly.
+          Agility: In the rapidly evolving fashion industry, agility is crucial. Fashion Girl has developed unique mechanisms to respond
+          swiftly to market changes and evolving fashion trends.
+          Innovation: Fashion Girl encourages creativity and experimentation, leading to continuous innovation in product offerings and
+          operational processes.
+          Sustainability: Fashion Girl is committed to environmental stewardship and social responsibility. It works towards sustainable
+          fashion through various initiatives.
+          Integrity: Honesty, transparency, and respect for all stakeholders are fundamental principles at Fashion Girl.
+</p>
+        </div>
+        <div class="section">
+          <h2>Our Programs</h2>
+          <p>We have encapsulated our analysis of Fashion Girl's mission, vision, and core values in a comprehensive mind map. This visual
+          aid captures the essence of Fashion Girl's strategic intent and the values that drive its operations. Through this mind map, you
+          can grasp a clear understanding of Fashion Girl's strategic direction and guiding principles.</p>
+        </div>
+        
+        <div class="section">
+          <h2>Contact Us</h2>
+          <p>If you have any questions or would like to learn more about our organization, please don't hesitate to
+            contact us.</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <p>&copy; 2024 Fashion Girl. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  </body>
+
+</html>

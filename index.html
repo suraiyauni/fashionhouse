@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Girl</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      .container h1 {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 20px;
+        background-color: rgb(88, 2, 66);
+        border-radius: 1rem;
+      }
+
+      .container {
+        /* max-width: 960px; */
+
+        margin: 0 0 0 30px;
+        padding: 20px;
+
+      }
+
+      .category {
+        margin-bottom: 40px;
+      }
+
+      .category h2 {
+        display: flex;
+        margin-top: 0;
+        justify-content: space-around;
+        color: rgb(255, 255, 255);
+        background-color: rgb(159, 5, 121);
+        padding: 10px;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 20px;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .gallery-item {
+        position: relative;
+        width: 100%;
+        padding-bottom: 100%;
+        transition: all .7s ease;
+      }
+
+      .gallery-item img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      .gallery-item:hover {
+        transform: scale(1.1);
+        transition: all .7s ease;
+      }
+
+      @media (max-width: 768px) {
+        .gallery {
+          grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="main-menu">
+        <div class="logo">
+          <img src="logo.png" alt="">
+          <p>Fashion Girl</p>
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle menu-toggle-chk">
+        <label for="menu-toggle" class="menu-toggle"><i class="fa-solid fa-bars"></i></label>
+        <ul class="menu">
+          <li class="menu-item"><a class="active" href="home.html">Home</a></li>
+          <li class="menu-item"><a href="product.html">Products</a></li>
+          <li class="menu-item"><a href="about.html">About</a></li>
+          <li class="menu-item"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="banner"
+        style="background-image: url('https://static.vecteezy.com/system/resources/previews/027/215/761/large_2x/little-girl-in-pink-princess-dress-having-fun-and-jumping-at-a-birthday-party-with-a-happy-birthday-banner-in-the-background-free-photo.jpg');">
+        <h1>Welcome!</h1>
+        <h3>The customer is at the heart of our unique business model,which includes design, production, distribution
+          and sales through our extensive retail network.</h3>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <h1>Kids Choice</h1>
+        <div class="category">
+          <h2>New Arrivals</h2>
+          <div class="gallery">
+            <div class="gallery-item">
+              <img src="https://ae01.alicdn.com/kf/He436d1afa8b646b39e5066df3bd8e6d41.jpg_640x640Q90.jpg_.webp"
+                alt="Image 1">
+            </div>
+            <div class="gallery-item">
+              <img src="https://m.media-amazon.com/images/I/7106zHjU3cL._AC_UY1000_.jpg" alt="Image 2">
+            </div>
+            <div class="gallery-item">
+              <img src="https://m.media-amazon.com/images/I/61mKZ+Hg6oS._AC_UF894,1000_QL80_.jpg" alt="Image 2">
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://i5.walmartimages.com/asr/7c0dc469-4ade-4f7a-8e59-99227be8b702.dcd9d01cca655591de9f22302014055b.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
+                alt="Image 2">
+            </div>
+            <div class="gallery-item">
+              <img src="https://img.fruugo.com/product/9/13/177813139_max.jpg" alt="Image 2">
+            </div>
+          </div>
+        </div>
+        <div class="category">
+          <h2>Party Collections</h2>
+          <div class="gallery">
+            <div class="gallery-item">
+              <img src="https://www.dhresource.com/webp/m/0x0/f2/albu/g21/M00/13/A1/rBVaqmBhl1-AJiZvAALmVKiSLmM266.jpg"
+                alt="Image 1">
+            </div>
+            <div class="gallery-item">
+              <img src="https://image.dhgate.com/webp/m/0x0/f2/albu/g10/M01/66/0B/rBVaWV7uKbaAVnkXAAMFnaepBWU161.jpg"
+                alt="Image 2">
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://ae01.alicdn.com/kf/H32d98c95bd8749f4abbdf7538e5e61f28/Hot-Christmas-Dress-for-Girls-4-7-8-9-11-12-14-Years-Winter-Velvet-Warm.jpg"
+                alt="Image 2">
+            </div>
+            <div class="gallery-item">
+              <img src="https://img.lazcdn.com/g/p/b3bff08d46e89f3e196ae43dfd098ef9.jpg_720x720q80.jpg" alt="Image 2">
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://ae01.alicdn.com/kf/He16a6f2c401d4b88a75473483b2950cer/Flower-Girl-Wedding-Evening-Long-Party-Dresses-Kids-Dresses-For-Girls-Princess-Dress-Teenage-Dress-7.jpg"
+                alt="Image 2">
+            </div>
+          </div>
+        </div>
+        <div class="category">
+          <h2>Casual Wear</h2>
+          <div class="gallery">
+            <div class="gallery-item">
+              <img src="https://ae01.alicdn.com/kf/See8c58bde9b84fe2b0d600e9aea1ae69d.jpg_640x640Q90.jpg_.webp"
+                alt="Image 1">
+            </div>
+            <div class="gallery-item">
+              <img src="https://ae01.alicdn.com/kf/S25e139ea72af444daba15bfdf815ed03y.jpg_640x640Q90.jpg_.webp"
+                alt="Image 2">
+            </div>
+            <div class="gallery-item">
+              <img src="https://i.ebayimg.com/images/g/ZMQAAOSw8WpguY2-/s-l1200.jpg" alt="Image 2">
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://i5.walmartimages.com/seo/Eashery-Girls-Dresses-Size-14-16-Girls-Kids-Casual-Dress-Paint-Butterfly-Rose-Animal-Fall-Sleeveless-Dresses-Purple-9-10-Years_21368855-36da-4e11-bc15-bfb8dcc76b34.420fd130538d28accb2437ed9b7f0f98.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
+                alt="Image 2">
+            </div>
+            <div class="gallery-item">
+              <img src="https://img.lazcdn.com/g/p/3a8d3f559916ba8a6a35c44adc8ceb58.png_720x720q80.png" alt="Image 2">
+            </div>
+          </div>
+        </div>
+        <div class="category">
+          <h2>Special Collections</h2>
+          <div class="gallery">
+            <div class="gallery-item">
+              <img src="https://violettefieldthreads.com/cdn/shop/files/DSCF6553_1024x1024.jpg?v=1701007032"
+                alt="Image 1">
+            </div>
+            <div class="gallery-item">
+              <img src="https://i.pinimg.com/736x/1d/64/1f/1d641f6de26759d220a7a2ad3b424b75.jpg" alt="Image 2">
+            </div>
+            <div class="gallery-item">
+              <img src="https://ae01.alicdn.com/kf/S7ded749e8c524fc291dde27e4bd12b95e.jpg_640x640Q90.jpg_.webp"
+                alt="Image 2">
+            </div>
+            <div class="gallery-item">
+              <img src="https://i.ebayimg.com/images/g/t60AAOSwbb5jihVa/s-l1200.webp" alt="Image 2">
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://ae01.alicdn.com/kf/S764419e7276f48e2931f87c984efee7by/High-Grade-Girls-Dress-Sequin-Long-Sleeve-Evening-Dress-Children-S-Temperament-Walk-Show-Flower-Children.jpg"
+                alt="Image 2">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h1>Ladies Choice</h1>
+        <div class="category">
+          <h2>New Arrivals</h2>
+          <div class="gallery">
+            <div class="gallery-item">
+              <img
+                src="https://img.freepik.com/free-photo/high-fashion-portrait-young-beautiful-brunette-woman-wearing-nice-trendy-blue-suit-sexy-fashion-model-posing-studio-fashionable-female-isolated_158538-22188.jpg?w=2000"
+                alt="Image 1">
+            </div>
+            <div class="gallery-item">
+              <img src="https://images.boldsky.com/img/2020/05/25-1590215161.jpg" alt="Image 2">
+            </div>
+            <div class="gallery-item">
+              <img src="https://i.pinimg.com/1200x/8b/4e/ba/8b4eba59f8e7b0964ba89558113c8a6d.jpg" alt="Image 2">
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://hips.hearstapps.com/hmg-prod/images/busty-womens-fashion-65f33159797a1.jpg?crop=1xw:0.6xh;center,top&resize=1200:*"
+                alt="Image 2">
+            </div>
+            <div class="gallery-item">
+              <img src="https://img.fruugo.com/product/6/63/555183636_max.jpg" alt="Image 2">
+            </div>
+          </div>
+        </div>
+        <div class="category">
+          <h2>Party Collections</h2>
+          <div class="gallery">
+            <div class="gallery-item">
+              <img src="https://5.imimg.com/data5/ANDROID/Default/2021/2/MZ/BV/JF/29603120/product-jpeg-500x500.jpg"
+                alt="Image 1">
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://www.alamodelabel.in/cdn/shop/files/image_c7ea1d85-0c90-4efb-b661-8ff2e38730a7_600x.jpg?v=1689689393"
+                alt="Image 2">
+            </div>
+            <div class="gallery-item">
+              <img src="https://i.pinimg.com/736x/c9/c2/3e/c9c23e113eb2094fccb8562c39119809.jpg" alt="Image 2">
+            </div>
+            <div class="gallery-item">
+              <img src="https://binfinite.in/cdn/shop/products/IMG_4287_480x.jpg?v=1666174495" alt="Image 2">
+            </div>
+            <div class="gallery-item">
+              <img src="https://d23gkft280ngn0.cloudfront.net/thumb550/2022/12/24/Sherri-Hill-Short-Dress-299.webp"
+                alt="Image 2">
+            </div>
+          </div>
+        </div>
+        <div class="category">
+          <h2>Casual Wear</h2>
+          <div class="gallery">
+            <div class="gallery-item">
+              <img src="https://m.media-amazon.com/images/I/71hUhluBsKL._AC_UF894,1000_QL80_.jpg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+              <img src="https://images.bewakoof.com/uploads/grid/app/The-Sleek-Slip-Dress-1597504225.jpg" alt="Image 2">
+            </div>
+            <div class="gallery-item">
+              <img src="https://images.bewakoof.com/uploads/grid/app/6-1597504223.jpg" alt="Image 2">
+            </div>
+            <div class="gallery-item">
+              <img src="https://i.pinimg.com/736x/36/06/fb/3606fb778a1998b926771ec4f1f7e812.jpg" alt="Image 2">
+            </div>
+            <div class="gallery-item">
+              <img src="https://miro.medium.com/v2/resize:fit:1400/1*xvWEVWGKzxv3BWYWAa-MlQ.png" alt="Image 2">
+            </div>
+          </div>
+        </div>
+        <div class="category">
+          <h2>Special Collections</h2>
+          <div class="gallery">
+            <div class="gallery-item">
+              <img src="https://esposagroup.com/wp-content/uploads/2021/11/KARGA_A-768x1024.jpg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+              <img src="https://www.likeadiva.com/images/wedding/weddingcoll2023-4.jpg" alt="Image 2">
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://i.pinimg.com/736x/2f/39/26/2f39269e2360f952c1a1dd647bcf6f88--modest-wedding-dresses-lace-wedding-gowns.jpg"
+                alt="Image 2">
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://nirvana14.com/cdn/shop/products/Waulizane-Sexy-Scalloped-Neck-Mermaid-Wedding-Dresses-With-Full-Sleeve-Cap-Sleeve-Tulle-Court-Train-Bridal_2000x.jpg?v=1572010624"
+                alt="Image 2">
+            </div>
+            <div class="gallery-item">
+              <img src="https://ae01.alicdn.com/kf/Hc4be39bdeb584528a855be7b6d52c691f.jpg_640x640Q90.jpg_.webp"
+                alt="Image 2">
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <p>&copy; 2024 Fashion Girl. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+</html>
